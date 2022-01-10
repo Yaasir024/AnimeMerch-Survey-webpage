@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <header id="header">
+        <h1 id="title">AnimeMerch Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve our page</p>
+    </header>
+
+    <form action="" id="survey-form">
+        <div class="form">
+            <label id="name-label" for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="Enter your name" required>
+        </div>
+        <div class="form">
+            <label id="email-label" for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Enter your Email" required>
+        </div>
+        <div class="form">
+            <label id="number-label" for="number">Age</label>
+            <input type="number" name="age" id="number" min="10" max="99" placeholder="Age" >
+        </div>
+        <div class="form">
+            <p>Which option best state your preferences</p>
+            <select name="preferences" id="dropdown" required>
+                <option disabled selected value>Select Preference</option>
+                <option value="anime">Anime</option>
+                <option value="manga">Manga</option>
+                <option value="manhwa">Manhwa</option>
+                <option value="lightnovel">LightNovel</option>
+            </select>
+        </div>
+        <div class="form">
+            <p>Are you interested in home delivery</p>
+            <label>
+                <input type="radio" name="user-choice" value="Yes" checked>
+                Yes
+            </label>
+            <label>
+                <input type="radio" name="user-choice" value="No">
+                No
+            </label>
+            <label>
+                <input type="radio" name="user-choice" value="notsure">
+                Not Sure
+            </label>
+        </div>
+        <div class="form">
+            <p>Comments</p>
+            <textarea name="comment" id="comment" placeholder="Enter your comment...."></textarea>
+        </div>
+        <div class="form">
+            <button type="submit" id="submit">Submit</button>
+        </div>
+    </form>
+</body>
+</html>
